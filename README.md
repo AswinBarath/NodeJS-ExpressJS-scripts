@@ -1,7 +1,7 @@
 # NodeJS and ExpressJS scripts
 
 <p>
-<img src="assets/NodeJS ExpressJS Scripts.PNG" alt="NodeJS ExpressJS Scripts" style="width:800px;" />
+<img src="assets/NodeJS ExpressJS Scripts.png" alt="NodeJS ExpressJS Scripts" style="width:800px;" />
 </p>
 
 
