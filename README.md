@@ -616,9 +616,9 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-11-express.PNG" alt="challenge-11-1-express" style="width:800px;" />
+<img src="assets/challenge-11-1-express.PNG" alt="challenge-11-1-express" style="width:800px;" />
 </p>
 
 <p>
-<img src="assets/challenge-11-express.PNG" alt="challenge-11-2-express" style="width:800px;" />
+<img src="assets/challenge-11-2-express.PNG" alt="challenge-11-2-express" style="width:800px;" />
 </p>
