@@ -1,9 +1,25 @@
 var express = require('express');
 var app = express();
 
-// var bodyParser = require('body-parser');
-// app.use(bodyParser.urlencoded({extended: false}));
+// Challenge 10 & 11
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: false}));
 
+
+// Challenge 6 - Mounted at root level to log all the requests
+app.use(function(req, res, next) {
+	console.log(`${req.method} ${req.path} - ${req.ip}`);
+	next();
+});
+
+
+// Challenge 11
+var postHandler = function(req, res) {
+	res.json({name: `${req.body.first} ${req.body.last}`});
+};
+app.route('/name').post(postHandler);
+
+// or
 
 // app.post('/name', function(req, res, next) {
 // 	query = req.body;
@@ -15,6 +31,15 @@ var app = express();
 // })
 
 
+// Challenge 9
+var handler = function(req, res) {
+	res.json({name: `${req.query.first} ${req.query.last}`});
+}
+
+app.route('/name').get(handler).post(handler);
+
+//or
+
 // app.get('/name', function(req, res, next) {
 // 	query = req.query;
 // 	first = query.first.toString();
@@ -22,29 +47,24 @@ var app = express();
 // 	next();
 // }, function(req, res) {
 // 	res.send({name: `${first} ${last}`})
-// })
+// });
 
 
-// app.get('/:word/echo', function(req, res) {
-// 	word = req.params.word;
-// 	res.send({echo: word});
-// })
+// Challenge 8
+app.get('/:word/echo', function(req, res) { 
+	res.json({echo: req.params.word});
+});
 
 
-// app.get('/now', function(req, res, next) {
-// 	req.time = new Date().toString();
-// 	next();
-// }, function(req, res) {
-// 	res.send({time: req.time})
-// })
-
-
-
-// app.use(function(req, res, next) {
-//   console.log(req.method, req.path, "-", req.ip);
-//   next();
-// })
-
+// Challenge 7
+app.get('/now', function(req, res, next) { 
+	// middleware 1 - Add current time
+	req.time = new Date().toString();
+	next();
+}, function(req, res) { 
+	// middleware 2 (handler) - Handle the response
+	res.json({time: req.time});
+});
 
 
 // Challenge 5
@@ -85,7 +105,7 @@ app.get('/', function(req, res) {
 // })
 
 
-// Exercise 1
+// Exercise
 // console.log("Hello World")
 
 
