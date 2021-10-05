@@ -28,7 +28,7 @@
 
 - To create an Express app object we use `require` to import and `express()` function to initialize the app
 
-```aidl
+``` 
 var express = require('express');
 var app = express();
 
@@ -56,7 +56,7 @@ var app = express();
 - where `req` is the request object, and `res` is the response object.
 - For example, the handler:
 
-```aidl
+``` 
 function(req, res) {
   res.send('Response String');
 }
@@ -73,7 +73,7 @@ function(req, res) {
 
 - Code
 
-```aidl
+``` 
 var express = require('express');
 var app = express();
 
@@ -109,7 +109,7 @@ module.exports = app;
 
 - Code
 
-```aidl
+``` 
 var express = require('express');
 var app = express();
 
@@ -151,7 +151,7 @@ module.exports = app;
 
 - Code
 
-```aidl
+``` 
 var express = require('express');
 var app = express();
 
@@ -201,7 +201,7 @@ Behind the scenes, it converts a valid JavaScript object into a string, then set
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
@@ -250,7 +250,7 @@ module.exports = app;
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
@@ -288,7 +288,7 @@ module.exports = app;
 
 - Look at the following example:
 
-```aidl
+``` 
 function(req, res, next) {
   console.log("I'm a middleware...");
   next();
@@ -322,7 +322,7 @@ function(req, res, next) {
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
@@ -349,7 +349,7 @@ module.exports = app;
 - Middleware can also be chained inside route definition.
 
 - Look at the following example:
-```aidl
+``` 
 app.get('/user', function(req, res, next) {
   req.user = getTheUserSync();  // Hypothetical synchronous operation
   next();
@@ -374,7 +374,7 @@ app.get('/user', function(req, res, next) {
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
@@ -425,7 +425,7 @@ req.params: {userId: '546', bookId: '6754'}
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
@@ -475,7 +475,7 @@ req.query: {userId: '546', bookId: '6754'}
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
@@ -552,7 +552,7 @@ name=John+Doe&age=25
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
@@ -602,7 +602,7 @@ req.body: {userId: '546', bookId: '6754'}
 
 - Code
 
-```aidl
+``` 
 var express = require('express')
 var app = express();
 
