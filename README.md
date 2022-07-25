@@ -1,44 +1,54 @@
 # NodeJS and ExpressJS scripts
 
 <p>
-<img src="assets/NodeJS ExpressJS Scripts.png" alt="NodeJS ExpressJS Scripts" style="width:800px;" />
+<img src="assets/NodeJS ExpressJS Scripts.png" alt="NodeJS ExpressJS Scripts" style="width:400px;" />
 </p>
 
+---
+
+## What is NodeJS ?
 
 - **Node.js** is a JavaScript runtime that allows developers to write backend (server-side) programs in **JavaScript**. 
 - **Node.js** comes with a handful of built-in modules — small, independent programs — that help with this. 
 - Some of the core modules include HTTP, which acts like a server, and File System, a module to read and modify files.
 
+## What is ExpressJS ?
 
 - **Express** is a lightweight web application framework, and is one of the most popular packages on npm. 
-- **Express** makes it much easier to create a server and handle routing for your application, which handles things like direct people to the correct page when they visit a certain endpoint.
-
-
-- The following scripts cover the basics of Node and Express including how to create a server, serve different files, and handle different requests from the browser.
+- **Express** makes it much easier to create a server and handle routing for your application, which handles things like: 
+	- direct people to the correct page when they visit a certain endpoint.
 
 ---
 
-## Source: freeCodeCamp course
-- [Back End Development and APIs](https://www.freecodecamp.org/learn/back-end-development-and-apis)
-- [Basic Node and Express](https://www.freecodecamp.org/learn/back-end-development-and-apis/#basic-node-and-express)
+## About Repo
+
+- The following documentation contains scripts which cover the basics of Node and Express including: 
+	- how to create a server,
+	- serve different files, and,
+	- handle different requests from the browser.
+- **Source: freeCodeCamp course**
+	- [Back End Development and APIs](https://www.freecodecamp.org/learn/back-end-development-and-apis)
+	- [Basic Node and Express](https://www.freecodecamp.org/learn/back-end-development-and-apis/#basic-node-and-express)
 
 ---
 
 ## Express app object
 
-- To create an Express app object we use `require` to import and `express()` function to initialize the app
+- To create an Express **app** object we use: 
+	- `require` to import express package and, 
+	- `express()` function to initialize the app
+- Code Snippet: 
 
-``` 
+```javascript 
 var express = require('express');
 var app = express();
-
 ```
 
 - This object has several methods
 - One fundamental method is `app.listen(port)`. 
 - It tells your server to listen on a given port, putting it in running state.
 
-
+---
 
 ## Express routes
 
@@ -56,7 +66,7 @@ var app = express();
 - where `req` is the request object, and `res` is the response object.
 - For example, the handler:
 
-``` 
+```javascript
 function(req, res) {
   res.send('Response String');
 }
@@ -71,9 +81,9 @@ function(req, res) {
 - Be sure that your code works by looking at the logs, then see the results in the preview if you are using Replit.
 
 
-- Code
+- Code Snippet:
 
-``` 
+```javascript 
 var express = require('express');
 var app = express();
 
@@ -87,7 +97,7 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-1-express.PNG" alt="challenge-1-express" style="width:800px;" />
+<img src="assets/challenge-1-express.PNG" alt="challenge-1-express" style="width:400px;" />
 </p>
 
 
@@ -125,7 +135,7 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-2-express.PNG" alt="challenge-2-express" style="width:800px;" />
+<img src="assets/challenge-2-express.PNG" alt="challenge-2-express" style="width:400px;" />
 </p>
 
 
@@ -165,7 +175,7 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-3-express.PNG" alt="challenge-3-express" style="width:800px;" />
+<img src="assets/challenge-3-express.PNG" alt="challenge-3-express" style="width:400px;" />
 </p>
 
 
@@ -217,7 +227,7 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-4-express.PNG" alt="challenge-4-express" style="width:800px;" />
+<img src="assets/challenge-4-express.PNG" alt="challenge-4-express" style="width:400px;" />
 </p>
 
 
@@ -272,7 +282,7 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-5-express.PNG" alt="challenge-5-express" style="width:800px;" />
+<img src="assets/challenge-5-express.PNG" alt="challenge-5-express" style="width:400px;" />
 </p>
 
 
@@ -338,7 +348,7 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-6-express.PNG" alt="challenge-6-express" style="width:800px;" />
+<img src="assets/challenge-6-express.PNG" alt="challenge-6-express" style="width:400px;" />
 </p>
 
 
@@ -394,7 +404,7 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-7-express.PNG" alt="challenge-7-express" style="width:800px;" />
+<img src="assets/challenge-7-express.PNG" alt="challenge-7-express" style="width:400px;" />
 </p>
 
 
@@ -440,11 +450,11 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-8-1-express.PNG" alt="challenge-8-1-express" style="width:800px;" />
+<img src="assets/challenge-8-1-express.PNG" alt="challenge-8-1-express" style="width:400px;" />
 </p>
 
 <p>
-<img src="assets/challenge-8-2-express.PNG" alt="challenge-8-2-express" style="width:800px;" />
+<img src="assets/challenge-8-2-express.PNG" alt="challenge-8-2-express" style="width:400px;" />
 </p>
 
 
@@ -492,11 +502,11 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-9-1-express.PNG" alt="challenge-9-1-express" style="width:800px;" />
+<img src="assets/challenge-9-1-express.PNG" alt="challenge-9-1-express" style="width:400px;" />
 </p>
 
 <p>
-<img src="assets/challenge-9-2-express.PNG" alt="challenge-9-2-express" style="width:800px;" />
+<img src="assets/challenge-9-2-express.PNG" alt="challenge-9-2-express" style="width:400px;" />
 </p>
 
 
@@ -621,9 +631,9 @@ module.exports = app;
 - Output
 
 <p>
-<img src="assets/challenge-11-1-express.PNG" alt="challenge-11-1-express" style="width:800px;" />
+<img src="assets/challenge-11-1-express.PNG" alt="challenge-11-1-express" style="width:400px;" />
 </p>
 
 <p>
-<img src="assets/challenge-11-2-express.PNG" alt="challenge-11-2-express" style="width:800px;" />
+<img src="assets/challenge-11-2-express.PNG" alt="challenge-11-2-express" style="width:400px;" />
 </p>
